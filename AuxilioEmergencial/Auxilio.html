@@ -62,76 +62,63 @@
         <input class="btn" type="button" name="btn" value="Enviar" onclick="teste()">
       </div>
     </section>
-    <script type="text/javascript">
-      function teste() {
-        var beneficio = 0
-        var auxilio = 600
-      var select = window.document.getElementById('valores');
-      var opcaoTexto = select.options[select.selectedIndex].text;
-      var opcaoValor = select.options[select.selectedIndex].value;
-      //window.alert(opcaoTexto)
-      //window.alert(opcaoValor)
-      if (opcaoValor == 'Escolha') {
-        window.alert('Escolha um mês')
-      } else {
-      switch(opcaoValor) {
-      case 'Janeiro' :
-        beneficio = 0
-        break
-      case 'Fevereiro' :
-        beneficio = 200
-        break
-      case 'Março':
-        beneficio = 0
-        break
-      case 'Abril':
-        beneficio = 200
-        break
-      case 'Maio':
-        beneficio = 0
-        break
-      case 'Junho':
-        beneficio = 200
-        break
-      case 'Julho':
-        beneficio = 0
-        break
-      case 'Agosto':
-        beneficio = 200
-        break
-      case 'Setembro':
-        beneficio = 0
-        break
-      case 'Outubro':
-        beneficio = 200
-        break
-      case 'Novembro':
-        beneficio = 0
-        break
-      case 'Dezembro':
-        beneficio = 200
-        break
-      default:
-      window.alert('Mes invalido...')
+  <script type="text/javascript">
+    function teste() {
+      var beneficio = 0
+      var auxilio = 600
+    var select = window.document.getElementById('valores');
+    var opcaoTexto = select.options[select.selectedIndex].text;
+    var opcaoValor = select.options[select.selectedIndex].value;
+    //window.alert(opcaoTexto)
+    //window.alert(opcaoValor)
+    if (opcaoValor == 'Escolha') {
+      window.alert('Escolha um mês')
+    } else {
+    switch(opcaoValor) {
+    case 'Janeiro' :
+      beneficio = 0
+      break
+    case 'Fevereiro' :
+      beneficio = 200
+      break
+    case 'Março':
+      beneficio = 0
+      break
+    case 'Abril':
+      beneficio = 200
+      break
+    case 'Maio':
+      beneficio = 0
+      break
+    case 'Junho':
+      beneficio = 200
+      break
+    case 'Julho':
+      beneficio = 0
+      break
+    case 'Agosto':
+      beneficio = 200
+      break
+    case 'Setembro':
+      beneficio = 0
+      break
+    case 'Outubro':
+      beneficio = 200
+      break
+    case 'Novembro':
+      beneficio = 0
+      break
+    case 'Dezembro':
+      beneficio = 200
+      break
+    default:
+    window.alert('Mes invalido...')
+    }
+    var total = auxilio + beneficio
+    window.alert(`O valor do seu auxilio este mês é de ${total} R$`)
+    window.alert(` Valor do vale gáz ${beneficio} R$`)
       }
-      var total = auxilio + beneficio
-      window.alert(`O valor do seu auxilio este mês é de ${total} R$`)
-      window.alert(` Valor do vale gáz ${beneficio} R$`)
-        }
-      }
+    }
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>
