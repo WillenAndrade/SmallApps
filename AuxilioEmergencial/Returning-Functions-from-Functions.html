@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Return Functions</title>
+  </head>
+  <style media="screen">
+    body {
+      background-image: url('auxilio.jpg');
+      background-size: cover;
+
+
+    }
+    .caixa{
+      width: 400px;
+      height: 200px;
+      background: green;
+      margin: 50px auto;
+      border-radius: 8px;
+      border: 2px solid yellow;
+    }
+
+    p {
+      color: white;
+      font-size: 1.4em;
+      padding: 20px 0 20px 20px;
+    }
+
+      div > .btn {
+      background: yellow;
+      color: green;
+      width: 120px;
+      padding: 10px;
+      margin-left: 135px;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    .btn:hover{
+      opacity: 0.8;
+    }
+  </style>
+  <body>
+
+    <section class="caixa">
+      <div class="">
+        <p>Digite o mês:
+          <select id="valores" name="valores">
+            <option value="Escolha" name="Escolha"></option>
+            <option value="Janeiro" name="Janeiro">Janeiro</option>
+            <option value="Fevereiro" name="Fevereiro">Fevereiro</option>
+            <option value="Março" name="Março">Março</option>
+            <option value="Abril" name="Abril">Abril</option>
+            <option value="Maio" name="Maio">Maio</option>
+            <option value="junho" name="junho">junho</option>
+            <option value="Julho" name="Julho">Julho</option>
+            <option value="Agosto" name="Agosto">Agosto</option>
+            <option value="Setembro" name="Setembro">Setembro</option>
+            <option value="Outubro" name="Outubro">Outubro</option>
+            <option value="Novembro" name="Novembro">Novembro</option>
+            <option value="Dezembro" name="Dezembro">Dezembro</option>
+          </select>
+        </p>
+        <input class="btn" type="button" name="btn" value="Enviar" onclick="teste()">
+      </div>
+
+
+    </section>
+
+    <script type="text/javascript">
+
+  // function calculetax(amount) {
+  //    var result = amount * 0.825
+  //    return result
+  //  }
+
+  //  tax = calculetax(100)
+  //  console.log(tax)
+
+
+
+
+
+
+function teste() {
+  var beneficio = 0
+  var auxilio = 600
+
+var select = window.document.getElementById('valores');
+var opcaoTexto = select.options[select.selectedIndex].text;
+var opcaoValor = select.options[select.selectedIndex].value;
+//window.alert(opcaoTexto)
+//window.alert(opcaoValor)
+if (opcaoValor == 'Escolha') {
+  window.alert('Escolha um mês')
+} else {
+
+
+switch(opcaoValor) {
+
+case 'Janeiro' :
+  beneficio = 0
+  break
+case 'Fevereiro' :
+  beneficio = 200
+  break
+case 'Março':
+  beneficio = 0
+  break
+case 'Abril':
+  beneficio = 200
+  break
+case 'Maio':
+  beneficio = 0
+  break
+case 'Junho':
+  beneficio = 200
+  break
+case 'Julho':
+  beneficio = 0
+  break
+case 'Agosto':
+  beneficio = 200
+  break
+case 'Setembro':
+  beneficio = 0
+  break
+case 'Outubro':
+  beneficio = 200
+  break
+case 'Novembro':
+  beneficio = 0
+  break
+case 'Dezembro':
+  beneficio = 200
+  break
+
+default:
+window.alert('Mes invalido...')
+
+}
+var total = auxilio + beneficio
+
+
+window.alert(`O valor do seu auxilio este mês é de ${total} R$`)
+
+window.alert(` Valor do vale gáz ${beneficio} R$`)
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
